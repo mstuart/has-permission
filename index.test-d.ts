@@ -1,12 +1,12 @@
 import {expectType, expectError} from 'tsd';
 import hasPermission, {assertPermission, PermissionError} from './index.js';
 
-// hasPermission
+// HasPermission
 expectType<boolean>(hasPermission('fs.read'));
 expectType<boolean>(hasPermission('fs.read', '/tmp'));
 expectType<boolean>(hasPermission('fs.write', '/var/log'));
 
-// assertPermission
+// AssertPermission
 expectType<void>(assertPermission('fs.read'));
 expectType<void>(assertPermission('fs.read', '/tmp'));
 
@@ -17,8 +17,8 @@ expectType<string>(error.scope);
 expectType<string | undefined>(error.reference);
 expectType<string>(error.message);
 
-const errorNoRef = new PermissionError('child');
-expectType<string | undefined>(errorNoRef.reference);
+const errorNoReference = new PermissionError('child');
+expectType<string | undefined>(errorNoReference.reference);
 
 // Invalid usage
 expectError(hasPermission(123));

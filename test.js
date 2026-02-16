@@ -1,7 +1,7 @@
 import test from 'ava';
 import hasPermission, {assertPermission, PermissionError} from './index.js';
 
-// hasPermission tests (without --permission flag, always returns true)
+// HasPermission tests (without --permission flag, always returns true)
 
 test('hasPermission returns true for fs.read in normal Node.js', t => {
 	t.true(hasPermission('fs.read'));
@@ -54,7 +54,7 @@ test('hasPermission throws TypeError for object scope', t => {
 	});
 });
 
-// assertPermission tests
+// AssertPermission tests
 
 test('assertPermission does not throw in normal Node.js', t => {
 	t.notThrows(() => assertPermission('fs.read'));
@@ -99,7 +99,7 @@ test('PermissionError message includes scope', t => {
 
 test('PermissionError message includes scope and reference', t => {
 	const error = new PermissionError('fs.read', '/etc/passwd');
-	t.is(error.message, "Permission denied: fs.read for '/etc/passwd'");
+	t.is(error.message, 'Permission denied: fs.read for \'/etc/passwd\'');
 });
 
 test('PermissionError is an instance of Error', t => {
