@@ -1,0 +1,44 @@
+{
+	"name": "has-permission",
+	"version": "0.0.0-development",
+	"description": "Check and assert Node.js Permission Model permissions at runtime",
+	"license": "MIT",
+	"repository": "mstuart/has-permission",
+	"funding": "https://github.com/sponsors/mstuart",
+	"author": {
+		"name": "Mark Stuart",
+		"email": "mstuart@users.noreply.github.com",
+		"url": "https://github.com/mstuart"
+	},
+	"type": "module",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"sideEffects": false,
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"permission",
+		"node",
+		"security",
+		"assert",
+		"check",
+		"fs",
+		"net",
+		"child_process"
+	],
+	"devDependencies": {
+		"ava": "^6",
+		"tsd": "^0.31",
+		"xo": "^0.60"
+	}
+}
