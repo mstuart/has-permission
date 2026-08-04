@@ -5,6 +5,8 @@ Error thrown when a required permission is not granted.
 */
 export class PermissionError extends Error {
 	/**
+	Create a `PermissionError`.
+
 	@param {string} scope - The permission scope that was denied.
 	@param {string} [reference] - The optional reference (e.g., file path, URL).
 	*/
