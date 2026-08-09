@@ -8,6 +8,8 @@
   <a href="https://github.com/mstuart/has-permission/actions/workflows/main.yml"><img src="https://github.com/mstuart/has-permission/actions/workflows/main.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://www.npmjs.com/package/has-permission"><img src="https://img.shields.io/npm/v/has-permission?label=npm" alt="npm"></a>
+  <a href="https://deepwiki.com/mstuart/has-permission"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
+  <a href="https://socket.dev/npm/package/has-permission"><img src="https://socket.dev/api/badge/npm/package/has-permission" alt="Socket"></a>
   <img src="https://img.shields.io/badge/node-%E2%89%A520-339933.svg" alt="Node 20+">
 </p>
 
