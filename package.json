@@ -1,47 +1,47 @@
 {
-	"name": "has-permission",
-	"version": "1.0.0",
-	"description": "Check and assert Node.js Permission Model permissions at runtime",
-	"license": "MIT",
-	"repository": "mstuart/has-permission",
-	"funding": "https://github.com/sponsors/mstuart",
-	"author": {
-		"name": "Mark Stuart",
-		"email": "mstuart@users.noreply.github.com",
-		"url": "https://github.com/mstuart"
-	},
-	"type": "module",
-	"exports": {
-		"types": "./index.d.ts",
-		"default": "./index.js"
-	},
-	"sideEffects": false,
-	"engines": {
-		"node": ">=20"
-	},
-	"scripts": {
-		"test": "ava && tsd",
-		"check": "ultracite check",
-		"fix": "ultracite fix"
-	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
-	"keywords": [
-		"permission",
-		"node",
-		"security",
-		"assert",
-		"check",
-		"fs",
-		"net",
-		"child_process"
-	],
-	"devDependencies": {
-		"@biomejs/biome": "2.5.6",
-		"ava": "^7",
-		"tsd": "^0.33",
-		"ultracite": "7.10.2"
-	}
+  "name": "has-permission",
+  "version": "1.0.0",
+  "description": "Check and assert Node.js Permission Model permissions at runtime",
+  "keywords": [
+    "permission",
+    "node",
+    "security",
+    "assert",
+    "check",
+    "fs",
+    "net",
+    "child_process"
+  ],
+  "repository": "mstuart/has-permission",
+  "funding": "https://github.com/sponsors/mstuart",
+  "license": "MIT",
+  "author": {
+    "name": "Mark Stuart",
+    "email": "mstuart@users.noreply.github.com",
+    "url": "https://github.com/mstuart"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "check": "ultracite check",
+    "fix": "ultracite fix",
+    "test": "ava && tsd"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.6",
+    "ava": "^7",
+    "tsd": "^0.33",
+    "ultracite": "7.10.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
