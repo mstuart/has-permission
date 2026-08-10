@@ -2,21 +2,21 @@
 Error thrown when a required permission is not granted.
 */
 export class PermissionError extends Error {
-	/**
+  /**
 	The permission scope that was denied.
 	*/
-	scope: string;
+  scope: string;
 
-	/**
+  /**
 	The optional reference (e.g., file path, URL).
 	*/
-	reference: string | undefined;
+  reference: string | undefined;
 
-	/**
+  /**
 	@param scope - The permission scope that was denied.
 	@param reference - The optional reference.
 	*/
-	constructor(scope: string, reference?: string);
+  constructor(scope: string, reference?: string);
 }
 
 /**
@@ -39,7 +39,10 @@ hasPermission('fs.read', '/etc/passwd');
 //=> true (when Permission Model is not enabled)
 ```
 */
-export default function hasPermission(scope: string, reference?: string): boolean;
+export default function hasPermission(
+  scope: string,
+  reference?: string
+): boolean;
 
 /**
 Assert that the current process has a given permission. Throws a `PermissionError` if denied.
