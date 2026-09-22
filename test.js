@@ -54,6 +54,17 @@ test("hasPermission throws TypeError for object scope", (t) => {
   });
 });
 
+test("hasPermission rejects a non-string reference", (t) => {
+  t.throws(() => hasPermission("fs.read", 123), {
+    instanceOf: TypeError,
+    message: "Expected `reference` to be a string",
+  });
+});
+
+test("hasPermission accepts an omitted reference", (t) => {
+  t.true(hasPermission("fs.read", undefined));
+});
+
 // AssertPermission tests
 
 test("assertPermission does not throw in normal Node.js", (t) => {
