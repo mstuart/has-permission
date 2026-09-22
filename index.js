@@ -38,6 +38,10 @@ export default function hasPermission(scope, reference) {
     throw new TypeError("Expected `scope` to be a string");
   }
 
+  if (reference !== undefined && typeof reference !== "string") {
+    throw new TypeError("Expected `reference` to be a string");
+  }
+
   return process.permission?.has(scope, reference) ?? true;
 }
 
